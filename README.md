@@ -186,7 +186,7 @@ Admin dashboard for managing lessons
 
 Payment gateway integration
 
-Vue 3 + Pinia version
+
 
 API-driven courses list
 
