@@ -60,7 +60,7 @@ let app = new Vue({
     async checkout() {
   if (this.canCheckout) { // Removed the '!' negation
     try {
-      let response = await fetch('http://localhost:3010/checkout', {
+      let response = await fetch('https://coursework-fullstack-project-backend.onrender.com/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -114,7 +114,7 @@ let app = new Vue({
     }
   },
   beforeMount(){
-    fetch('http://localhost:3010/lessons').then(res=>res.json()).then(data=>{
+    fetch('https://coursework-fullstack-project-backend.onrender.com/lessons').then(res=>res.json()).then(data=>{
       this.lessons=[...data];
       this.displayedLessons=[...data];
     });
